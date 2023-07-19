@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{ /*Criar variáveis raízes*/
     /*Palheta de cores*/
@@ -12,7 +13,7 @@
     --cor5: #FF6723;/*D18000*/
 
     /*Fontes*/
-    --fonte-text: 'Wix Madefor Text', sans-serif;
+    --fonte-text: 'Poppins', sans-serif;    ;
     --fonte-display: 'Wix Madefor Display', sans-serif;
 }
 
@@ -33,12 +34,11 @@ header{
     top: 0px;
     background-image: linear-gradient(to bottom, #F1F5F7, white);
     z-index: 9999999;
-    margin-bottom: 200px;
     box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.429);
 }
 
 header h2{
-    font-family: var(--fonte-display);
+    font-family: var(--fonte-text);
     display: inline;
     padding-right: 10px;
 }
@@ -52,8 +52,8 @@ header nav{
     position: relative; 
     top: 30px;
     text-align: right;
-    font-family: var(--fonte-display);
-    font-weight: lighter;
+    font-family: var(--fonte-text);
+    font-weight: normal;
     font-size: 0.8em;
 }
 
@@ -68,34 +68,36 @@ nav a:hover, nav a:active{
 }
 
 main{
-    position: relative;
+    height: 860px;
 }
 
 div#esquerda{
     width: 40%;
-    min-height: 800px;
+    min-width: 40%;
+    max-width: 50%;
+    min-height: 850px;
     background-color: var(--cor1);
 }
 
 div#conteudo-esquerda{
     background-color: var(--cor0);
-    max-width: 400px;
+    max-width: 75%;
     min-width: 200px;
     min-height: 500px;
     text-align: center;
     position: relative;
-    left: 50%;
-    top: 200%;
-    z-index: 99999;
+    left: 40%;
+    top: 100px;
 }
 
  .eu{
-    width: 60%;
+    width: 80%;
+    max-width: 300px;
     margin: 40px 0px 30px 0px;
  }
 
  div#conteudo-esquerda > h2{
-    font-family: var(--fonte-display);
+    font-family: var(--fonte-text);
     text-align: center;
     margin-bottom: 30px;
 
@@ -110,15 +112,15 @@ div#conteudo-esquerda > hr{
 }
 
 div#conteudo-esquerda > p{
-    font-family: var(--fonte-display);
+    font-family: var(--fonte-text);
     text-align: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin: 50px 20px 50px 20px;
 }
 
 div#minifooter{
     display: flex;
     justify-content: center;
+    background-color: white;
 }
 
 div#minifooter img{
@@ -126,3 +128,88 @@ div#minifooter img{
     height: 90%;
 }
 
+div#conteudo-direita{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    height: 650px;
+    position: relative;
+    left: 50%;
+    top: -750px;
+    margin-left: 20px;
+}
+div#conteudo-direita h1{
+    font-family: var(--fonte-text);
+    font-size: 600%;
+    margin-bottom: 30px;
+
+}
+
+div#conteudo-direita h2{
+    font-family: var(--fonte-text);
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+a.curriculo{
+    text-align: center;
+    text-decoration: none;
+    border-style: inset;
+    border-color: var(--cor5);
+    background-color: var(--cor5);
+    color: white;
+    border-radius: 25px 25px 25px 25px;
+    padding: 7px;
+    font-size: 1.2em;
+    margin: 0px 30px 50px 20px;
+}
+
+a.curriculo:hover{
+    background-color: white;
+    border-color: var(--cor5);
+    border-style: inset;
+    color: black;
+    border-radius: 25px 25px 25px 25px;
+}
+
+a.projetos{
+    text-align: center;
+    text-decoration: none;
+    border-style: inset;
+    border-color: var(--cor5);
+    color: black;
+    border-radius: 25px 25px 25px 25px;
+    padding: 7px;
+    font-size: 1.2em;
+    margin: 0px 30px 50px 20px;
+}
+
+a.projetos:hover{
+    background-color: var(--cor5);
+    border-color: var(--cor5);
+    border-style: inset;
+    color: white;
+    border-radius: 25px 25px 25px 25px;
+}
+
+div#conteudo-direita p{
+    text-align: justify;
+    margin-top: 70px;
+    font-family: var(--fonte-text);
+    max-width: 400px;
+    min-width: 320px;
+}
+
+footer{
+    text-align: center;
+    padding-top: 20px;
+    font-family: var(--fonte-text);
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+
+footer table{
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    border-spacing: 50px 0px;
+}
