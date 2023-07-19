@@ -5,12 +5,12 @@
 
 :root{ /*Criar variáveis raízes*/
     /*Palheta de cores*/
-    --cor0:#adcfe8;    
-    --cor1:#77a5cd;
-    --cor2: #00559F; 
-    --cor3: #2A3F52;
-    --cor4: #002C52;
-    --cor5: #FF6723;/*D18000*/
+    --cor0:#30FF75;    
+    --cor1:#2BB358;
+    --cor2: #CCFFF1; 
+    --cor3: #568F80;
+    --cor4: #9ADBCA;
+    --cor5: #DBA99A;/*D18000*/
 
     /*Fontes*/
     --fonte-text: 'Poppins', sans-serif;    ;
@@ -76,11 +76,11 @@ div#esquerda{
     min-width: 40%;
     max-width: 50%;
     min-height: 850px;
-    background-color: var(--cor1);
+    background-color: var(--cor4);
 }
 
 div#conteudo-esquerda{
-    background-color: var(--cor0);
+    background-color: var(--cor2);
     max-width: 75%;
     min-width: 200px;
     min-height: 500px;
@@ -197,6 +197,15 @@ div#conteudo-direita p{
     font-family: var(--fonte-text);
     max-width: 400px;
     min-width: 320px;
+}
+
+p.fct a{
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+p.fct a:hover{
+    text-decoration: underline;
 }
 
 footer{
