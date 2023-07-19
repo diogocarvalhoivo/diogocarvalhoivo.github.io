@@ -73,9 +73,8 @@ main{
 
 div#esquerda{
     width: 40%;
-    height: 900px;
+    min-height: 800px;
     background-color: var(--cor1);
-    z-index: 0;
 }
 
 div#conteudo-esquerda{
@@ -86,7 +85,7 @@ div#conteudo-esquerda{
     text-align: center;
     position: relative;
     left: 50%;
-    top: 20%;
+    top: 200%;
     z-index: 99999;
 }
 
