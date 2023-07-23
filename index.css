@@ -3,14 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{ /*Criar variáveis raízes*/
+:root{
     /*Palheta de cores*/
-    --cor0:#30FF75;    
-    --cor1:#2BB358;
-    --cor2: #CCFFF1; 
-    --cor3: #568F80;
-    --cor4: #9ADBCA;
-    --cor5: #DBA99A;/*D18000*/
+    --cor0:#86DDF0;    
+    --cor1:#BAEDF7;
+    --cor2: #569AA8; 
+    --cor3: #F05A00;
+    --cor4: #F05A00;/*D18000*/
 
     /*Fontes*/
     --fonte-text: 'Poppins', sans-serif;    ;
@@ -27,34 +26,37 @@ body{
 }
 
 header{
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 50px;
-    height: 100px;
+    height: 100%;
+    min-height: 70px;
+    max-height: 160px;
     position: sticky;
     top: 0px;
-    background-image: linear-gradient(to bottom, #F1F5F7, white);
+    background-image: linear-gradient(to bottom, rgb(245, 245, 255), white);
     z-index: 9999999;
-    box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.429);
+    box-shadow: inset 0px .5px 10px .5px rgba(0, 0, 0, 0.095);
+    display: flex;
+    justify-content: space-between;
 }
 
-header h2{
+#cab1{
     font-family: var(--fonte-text);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#cab1 h2{
     display: inline;
-    padding-right: 10px;
+    font-family: var(--fonte-text);
 }
 
-header span{
+#cab2{
+    display: inline;
+    padding-top: 30px;
     font-family: var(--fonte-text);
-    font-size: 1.1em;
-}
-
-header nav{
-    position: relative; 
-    top: 30px;
-    text-align: right;
-    font-family: var(--fonte-text);
-    font-weight: normal;
-    font-size: 0.8em;
+    font-weight: 300;
+    font-size: 0.9em;
 }
 
 nav a{
@@ -64,43 +66,46 @@ nav a{
 }
 
 nav a:hover, nav a:active{
-    color: var(--cor5);
+    color: var(--cor3);
 }
 
-main{
-    height: 860px;
-}
+
+
+
+
+
+
+
 
 div#esquerda{
+    margin-top: 50px;
+    background-color: var(--cor1);
+    display: inline-block;
     width: 40%;
-    min-width: 40%;
-    max-width: 50%;
-    min-height: 850px;
-    background-color: var(--cor4);
+    min-width: 307px;
+    height: 770px;
 }
 
 div#conteudo-esquerda{
-    background-color: var(--cor2);
-    max-width: 75%;
+    background-color: var(--cor0);
+    width: 400%;
+    max-width: 60%;
     min-width: 200px;
-    min-height: 500px;
-    text-align: center;
-    position: relative;
-    left: 40%;
-    top: 100px;
+    margin: 60px 0px auto 45%;
+    box-shadow: -6px 4px 15px 1px rgba(0, 0, 0, 0.182);
+    
 }
 
  .eu{
     width: 80%;
     max-width: 300px;
-    margin: 40px 0px 30px 0px;
+    margin: 25px 0px 30px 40px;
  }
 
  div#conteudo-esquerda > h2{
     font-family: var(--fonte-text);
     text-align: center;
     margin-bottom: 30px;
-
 }
 
 div#conteudo-esquerda > hr{
@@ -108,19 +113,21 @@ div#conteudo-esquerda > hr{
     margin: auto;
     border:none;
     height: 2px;
-    background: var(--cor5);
+    background: var(--cor3);
 }
 
 div#conteudo-esquerda > p{
     font-family: var(--fonte-text);
     text-align: center;
-    margin: 50px 20px 50px 20px;
+    margin: 30px 20px 10px 20px;
 }
 
 div#minifooter{
     display: flex;
     justify-content: center;
     background-color: white;
+    margin: auto;
+    padding: 10px;
 }
 
 div#minifooter img{
@@ -128,14 +135,19 @@ div#minifooter img{
     height: 90%;
 }
 
+
+
+
+
+
+
+
+
+
 div#conteudo-direita{
-    background-color: rgb(255, 255, 255);
-    width: 30%;
-    height: 650px;
-    position: relative;
-    left: 50%;
-    top: -750px;
-    margin-left: 20px;
+    margin: auto;
+    display: inline-block;
+    padding: 60px;
 }
 div#conteudo-direita h1{
     font-family: var(--fonte-text);
@@ -154,18 +166,19 @@ a.curriculo{
     text-align: center;
     text-decoration: none;
     border-style: inset;
-    border-color: var(--cor5);
-    background-color: var(--cor5);
+    border-color: var(--cor4);
+    background-color: var(--cor3);
     color: white;
     border-radius: 25px 25px 25px 25px;
-    padding: 7px;
+    padding: 10px;
     font-size: 1.2em;
     margin: 0px 30px 50px 20px;
+    transition-delay: .2s;
 }
 
 a.curriculo:hover{
     background-color: white;
-    border-color: var(--cor5);
+    border-color: var(--cor4);
     border-style: inset;
     color: black;
     border-radius: 25px 25px 25px 25px;
@@ -175,17 +188,17 @@ a.projetos{
     text-align: center;
     text-decoration: none;
     border-style: inset;
-    border-color: var(--cor5);
+    border-color: var(--cor4);
     color: black;
     border-radius: 25px 25px 25px 25px;
-    padding: 7px;
+    padding: 10px;
     font-size: 1.2em;
     margin: 0px 30px 50px 20px;
 }
 
 a.projetos:hover{
-    background-color: var(--cor5);
-    border-color: var(--cor5);
+    background-color: var(--cor3);
+    border-color: var(--cor4);
     border-style: inset;
     color: white;
     border-radius: 25px 25px 25px 25px;
@@ -195,18 +208,24 @@ div#conteudo-direita p{
     text-align: justify;
     margin-top: 70px;
     font-family: var(--fonte-text);
-    max-width: 400px;
-    min-width: 320px;
+    max-width: 360px;
 }
 
 p.fct a{
     text-decoration: none;
-    color: var(--cor3);
+    color: var(--cor2);
 }
 
 p.fct a:hover{
     text-decoration: underline;
 }
+
+
+
+
+
+
+
 
 footer{
     text-align: center;
@@ -214,6 +233,30 @@ footer{
     font-family: var(--fonte-text);
     font-size: 0.8em;
     padding-bottom: 10px;
+}
+
+div#telefone{
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+div#email{
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+div#redes{
+    display: inline-block;
+    font-size: 0.8em;
+}
+div#redes img{
+    width: 20px;
+    height: 20px;
+}
+
+div#pe{
+    display: flex;
+    justify-content: space-between;
 }
 
 footer table{

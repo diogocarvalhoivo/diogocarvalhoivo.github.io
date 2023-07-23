@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    /*Palheta de cores*/
+    --cor0:#30FF75;    
+    --cor1:#2BB358;
+    --cor2: #CCFFF1; 
+    --cor3: #568F80;
+    --cor4: #9ADBCA;
+    --cor5: #DBA99A;/*D18000*/
+
+    /*Fontes*/
+    --fonte-text: 'Poppins', sans-serif;    ;
+    --fonte-display: 'Wix Madefor Display', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    padding-top: 30px;
+    padding-left: 50px;
+    height: 100%;
+    min-height: 70px;
+    max-height: 160px;
+    position: sticky;
+    top: 0px;
+    background-image: linear-gradient(to bottom, #F1F5F7, white);
+    z-index: 9999999;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.429);
+    display: flex;
+    justify-content: space-between;
+}
+
+#cab1{
+    font-family: var(--fonte-text);
+    font-size: 1em;
+}
+
+#cab1 h2{
+    display: inline;
+    font-family: var(--fonte-text);
+}
+
+#cab2{
+    display: inline;
+    padding-top: 30px;
+    font-family: var(--fonte-text);
+    font-weight: normal;
+    font-size: 0.8em;
+}
