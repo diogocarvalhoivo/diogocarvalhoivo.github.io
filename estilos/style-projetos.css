@@ -5,12 +5,11 @@
 
 :root{
     /*Palheta de cores*/
-    --cor0:#30FF75;    
-    --cor1:#2BB358;
-    --cor2: #CCFFF1; 
-    --cor3: #568F80;
-    --cor4: #9ADBCA;
-    --cor5: #DBA99A;/*D18000*/
+    --cor0:#5D96A9;    
+    --cor1:#16537B;
+    --cor2: #16537B; 
+    --cor3: #FF6723;
+    --cor4: #ff5100;/*D18000*/
 
     /*Fontes*/
     --fonte-text: 'Poppins', sans-serif;    ;
@@ -22,9 +21,6 @@
     padding: 0px;
 }
 
-body{
-    background-color: white;
-}
 
 header{
     padding-top: 30px;
@@ -34,15 +30,16 @@ header{
     max-height: 160px;
     position: sticky;
     top: 0px;
-    background-image: linear-gradient(to bottom, #F1F5F7, white);
+    background-image: linear-gradient(to bottom, rgb(245, 245, 255), white);
     z-index: 9999999;
-    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.429);
+    box-shadow: inset 0px .5px 10px .5px rgba(0, 0, 0, 0.095);
     display: flex;
     justify-content: space-between;
 }
 
 #cab1{
     font-family: var(--fonte-text);
+    font-weight: 400;
     font-size: 1em;
 }
 
@@ -55,6 +52,60 @@ header{
     display: inline;
     padding-top: 30px;
     font-family: var(--fonte-text);
-    font-weight: normal;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+nav a:hover, nav a:active{
+    color: var(--cor3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    padding-top: 20px;
+    font-family: var(--fonte-text);
     font-size: 0.8em;
+    padding-bottom: 10px;
+}
+
+div#telefone{
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+div#email{
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+div#redes{
+    display: inline-block;
+    font-size: 0.8em;
+}
+div#redes img{
+    width: 20px;
+    height: 20px;
+}
+
+div#pe{
+    display: flex;
+    justify-content: space-between;
 }

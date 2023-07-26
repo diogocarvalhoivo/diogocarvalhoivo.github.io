@@ -5,11 +5,11 @@
 
 :root{
     /*Palheta de cores*/
-    --cor0:#86DDF0;    
-    --cor1:#BAEDF7;
-    --cor2: #569AA8; 
-    --cor3: #F05A00;
-    --cor4: #F05A00;/*D18000*/
+    --cor0:#5D96A9;    
+    --cor1:#16537B;
+    --cor2: #16537B; 
+    --cor3: #FF6723;
+    --cor4: #ff5100;/*D18000*/
 
     /*Fontes*/
     --fonte-text: 'Poppins', sans-serif;    ;
@@ -84,6 +84,7 @@ div#esquerda{
     width: 40%;
     min-width: 160px;
     height: 770px;
+    box-shadow: -6px 4px 15px 1px rgba(0, 0, 0, 0.273);
 }
 
 div#conteudo-esquerda{
@@ -93,7 +94,7 @@ div#conteudo-esquerda{
     min-width: 200px;
     margin: 60px 0px auto 45%;
     padding-right: 0px;
-    box-shadow: -6px 4px 15px 1px rgba(0, 0, 0, 0.182);
+    box-shadow: -6px 4px 15px 1px rgba(0, 0, 0, 0.204);
     
 }
 
@@ -261,11 +262,4 @@ div#redes img{
 div#pe{
     display: flex;
     justify-content: space-between;
-}
-
-footer table{
-    display: flex;
-    text-align: center;
-    justify-content: flex-end;
-    border-spacing: 50px 0px;
 }
