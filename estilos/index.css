@@ -64,8 +64,10 @@ nav a{
     color: black;
 }
 
-nav a:hover, nav a:active{
+nav#cab2 a:hover{
     color: var(--cor3);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.242);
+    transition: color .3s, text-shadow .2s;
 }
 
 
@@ -176,13 +178,14 @@ div#conteudo-direita{
     margin-left: 40px;
     display: inline-block;
     padding-left: 0px;
-    width: 20%;
+    width: 23%;
     min-width: 260px;
 }
 div#conteudo-direita h1{
     font-family: var(--fonte-text);
     font-size: 600%;
     margin-bottom: 30px;
+    text-align: center;
 
 }
 
@@ -206,15 +209,19 @@ a.curriculo{
     color: white;
     border-radius: 25px 25px 25px 25px;
     font-size: 1.2em;
-    margin: 0px 30px 50px 20px;
+    margin: 0px 30px 30px 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.347);
+    padding: 5px;
 }
 
 a.curriculo:hover{
     background-color: white;
-    border-color: var(--cor4);
-    border-style: inset;
     color: black;
     border-radius: 25px 25px 25px 25px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.519);
+    transform: translate(-2px, -2px);
+    transition: transform .2s, box-shadow .5s;
+    
 }
 
 a.projetos{
@@ -225,20 +232,23 @@ a.projetos{
     color: black;
     border-radius: 25px 25px 25px 25px;
     font-size: 1.2em;
-    margin: 0px 30px 50px 20px;
+    margin: 0px 30px 30px 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.347);
+    padding: 5px;
 }
 
 a.projetos:hover{
     background-color: var(--cor3);
-    border-color: var(--cor4);
-    border-style: inset;
     color: white;
     border-radius: 25px 25px 25px 25px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.519);
+    transform: translate(-2px, -2px);
+    transition: transform .2s, box-shadow .5s;
 }
 
 div#conteudo-direita p{
     text-align: justify;
-    margin-top: 50px;
+    margin-top: 10px;
     font-family: var(--fonte-text);
 }
 
