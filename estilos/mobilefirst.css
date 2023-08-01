@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    /*Palheta de cores*/
+    --cor0:#5D96A9;    
+    --cor1:#16537B;
+    --cor2: #16537B; 
+    --cor3: #FF6723;
+    --cor4: #ff5100;/*D18000*/
+
+    /*Fontes*/
+    --fonte-text: 'Poppins', sans-serif;    ;
+    --fonte-display: 'Wix Madefor Display', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    height: 120px;
+    padding: 10px 0px;
+    position: sticky;
+    top: 0px;
+    background-image: linear-gradient(to bottom, rgb(245, 245, 255), white);
+    z-index: 9999999;
+    box-shadow: inset 0px .5px 10px .5px rgba(0, 0, 0, 0.095);
+}
+
+#cab1{
+    text-align: center;
+    font-family: var(--fonte-text);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#ponto{
+    font-size: 0.7em;
+}
+
+#cab1 h1{
+    font-family: var(--fonte-text);
+    margin-top: 5px;
+}
+
+#hamb{
+    margin: 5px 0px;
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+
+menu{
+    font-family: var(--fonte-text);
+    font-weight: 300;
+    display: none;
+
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu > ul > li > a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    background-color: #5d96a9ba;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+menu > ul > li > a:hover{
+    color: var(--cor3);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.242);
+    transition: color .3s, text-shadow .2s;
+}
+
+
+
+
+
+main{
+    height: calc(100vh - 320px);
+    position: relative;
+}
+
+.frame1{
+    width: 100%;
+    height: calc(100vh - 207px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0px;
+
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    font-family: var(--fonte-text);
+    font-size: 0.8em;
+    background-color: white;
+}
+
+div#telefone{
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+div#email{
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+div#redes{
+    display: inline;
+    font-size: 0.8em;
+}
+div#redes img{
+    width: 20px;
+    height: 20px;
+}
+
+div#pe{
+    display: flex;
+    justify-content: space-between;
+}
