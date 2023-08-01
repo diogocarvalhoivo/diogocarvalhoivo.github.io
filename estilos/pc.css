@@ -51,10 +51,14 @@ menu > ul{
     width: 60%;
     margin: auto;
     justify-content: space-around;
-
 }
 
 menu > ul > li{
     display: inline-block;
     font-size: 0.8em;
+}
+
+.frame1{
+    width: 100%;
+    height: calc(100vh - 219px);
 }
