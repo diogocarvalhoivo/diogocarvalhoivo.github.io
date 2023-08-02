@@ -82,6 +82,7 @@ menu > ul > li > a{
     padding: 10px;
     color: black;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.573);
 }
 
 menu > ul > li > a:hover{
@@ -97,13 +98,12 @@ menu > ul > li > a:hover{
 
 
 main{
-    height: calc(100vh - 205px);
-    position: relative;
+    height: calc(100vh - 135px);
 }
 
 .frame1{
     width: 100%;
-    height: calc(100vh - 205px);
+    height: calc(100vh - 135px);
     border: none;
 }
 

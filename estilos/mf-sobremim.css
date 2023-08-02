@@ -289,10 +289,8 @@ p.fct a:hover{
 
 footer{
     text-align: center;
-    padding-top: 20px;
     font-family: var(--fonte-text);
     font-size: 0.8em;
-    padding-bottom: 10px;
     background-color: white;
 }
 
@@ -311,8 +309,8 @@ div#redes{
     font-size: 0.8em;
 }
 div#redes img{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 
 div#pe{

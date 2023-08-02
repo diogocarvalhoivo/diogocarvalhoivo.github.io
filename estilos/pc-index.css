@@ -58,7 +58,11 @@ menu > ul > li{
     font-size: 0.8em;
 }
 
+main{
+    height: calc(100vh - 135px);
+}
+
 .frame1{
     width: 100%;
-    height: calc(100vh - 219px);
+    height: calc(100vh - 135px);
 }
